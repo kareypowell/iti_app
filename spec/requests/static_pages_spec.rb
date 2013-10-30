@@ -7,9 +7,15 @@ describe "StaticPages" do
   describe "Home page" do
     before { visit root_path }
 
-    it { should have_content('ITI') }
+    it { should have_content('Welcome to Intellectual Technologies and Investments') }
     it { should have_title(full_title('')) }
     it { should_not have_title('| Home') }
+
+    it { should have_link('Home',      href: root_path) }
+    it { should have_link('Team',      href: about_path) }
+    it { should have_link('Solutions', href: '#') }
+    it { should have_link('Products',  href: '#') }
+    it { should have_link('Contact',   href: '#') }
   end
 
   describe "About page" do

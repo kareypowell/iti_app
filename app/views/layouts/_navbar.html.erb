@@ -1,0 +1,25 @@
+<!-- Menu -->
+<button class="btn-toggle">Menu</button>
+<nav id="mainnav">
+  <ul id="cbp-tm-menu" class="cbp-tm-menu">
+    <li class="logo displaynone">
+      <%= link_to image_tag("logo-mini.png", alt: 'mini logo'), root_path %>
+    </li>
+    <li>
+      <%= custom_link_to "Home", root_path %>
+    </li>
+    <li>
+      <%= custom_link_to "Team", about_path %>
+    </li>
+    <li>
+      <%= custom_link_to "Solutions", '#' %>
+    </li>
+    <li>
+      <%= link_to "Products", '#' %>
+    </li>
+    <li>
+      <a href="#" onClick="return false;" class="md-trigger" data-modal="contact-modal">Contact</a>
+    </li>
+  </ul>
+</nav>
+<!-- /Menu -->
