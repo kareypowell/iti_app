@@ -1,53 +1,9 @@
 <header id="topheader">
-  
-  <!-- Logo -->
-  <div id="logo" class="row">
-    <div class="large-2 small-4 columns">
-      <%= link_to image_tag("iti_logo.png", alt: 'ITI'), root_path %>
-    </div>
-  </div>
-  <!-- /Logo -->
 
-  <!-- Banner -->
-  <div id="mainBanner" data-type="background" data-spped="8">
-    <div id="bx-wrapper" class="bx-wrapper">
-      
-      <div class="bx-loading">
-        <div class="loader">
-          <div class="dot dot1"></div>
-          <div class="dot dot2"></div>
-          <div class="dot dot3"></div>
-        </div>
-      </div>
-
-      <div class="bx-content">
-        <h2>we provide CCTV Solutions</h2>
-      </div>
-
-      <div class="bx-nav">
-        <a href="#" class="bx-prev"></a>
-        <a href="#" class="bx-next"></a>
-      </div>
-
-      <div class="bx-thumbs">
-        <a href="#" class="bx-thumbs-current bx-thumb-1"></a>
-        <a href="#" class="bx-thumb-2"></a>
-        <a href="#" class="bx-thumb-3"></a>
-        <a href="#" class="bx-thumb-4"></a>
-        <a href="#" class="bx-thumb-5"></a>
-      </div>
-
-      <div class="bx-container">
-        <%= image_tag "banner/1.jpg", alt: 'image01', title: 'we provide CCTV Solutions' %>
-        <%= image_tag "banner/2.jpg", alt: 'image02', title: 'we provide Network Solutions' %>
-        <%= image_tag "banner/3.jpg", alt: 'image03', title: 'we do Consulting' %>
-        <%= image_tag "banner/4.jpg", alt: 'image04', title: 'keep an eye on your Surroundings' %>
-        <%= image_tag "banner/5.jpg", alt: 'image05', title: 'we provide Home Automation Solutions' %>
-      </div>
-
-    </div>
-  </div>
-  <!-- /Banner -->
+  <% if current_page?(root_path) %>
+    <%= render 'layouts/main_logo' %>
+    <%= render 'layouts/home_banner' %>
+  <% end %>
 
   <%= render 'layouts/navbar' %>
 

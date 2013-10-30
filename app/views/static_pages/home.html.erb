@@ -1,3 +1,7 @@
+<% content_for :body do %>
+  <body id="homepage" class="big_banner">
+<% end %>
+
 <!-- Intro -->
 <div class="row intro">
   <div class="large-12 columns">
@@ -279,117 +283,9 @@
 </div>
 <!-- /Map -->
 
-<!-- .bottom -->
-<div class="bottom">
-  <div class="row">
-    <div class="large-4 columns">
-      <h3>From The Blog</h3>
-      <div class="et-wrapper">
-      <button class="button et-rotate btn" data-in="rotateSlideIn" data-out="rotateSlideOut">Next</button>
-      <div class="et-page blog-item">
-        <img src="http://placehold.it/80x80" alt="bunga">
-        <div class="floatright">
-          <h5><a href="#">Magnis Dis Parturient</a></h5>
-          <p>Vestibulum id ligula porta felis euismod semper. Donec ullamcorper nulla non metus auctor fringilla. Magnis dis parturient montes, nascetur ridiculus mus.</p>
-          <span class="author"><a href="#">Hilda M. Hall</a> - Sep 16</span>
-        </div>
-      </div>
 
-      <div class="et-page blog-item">
-        <img src="http://placehold.it/80x80" alt="gandum">
-        <div class="floatright">
-          <h5><a href="#">Donec Ullamcorper Nulla</a></h5>
-          <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper.</p>
-          <span class="author"><a href="#">Hilda M. Hall</a> - Sep 16</span>
-        </div>
-      </div>
-
-      <div class="et-page blog-item">
-        <img src="http://placehold.it/80x80" alt="balon">
-        <div class="floatright">
-          <h5><a href="#">Nascetur Ridiculus Mus</a></h5>
-          <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <span class="author"><a href="#">Hilda M. Hall</a> - Sep 16</span>
-        </div>
-      </div>
-
-      </div>
-
-    </div>
-
-    <div class="large-4 columns">
-      <h3>About ITI</h3>
-      <p>
-        We are on our way to being the leading supplier and distributor of CCTV security products and networks solutions in <b>Jamaica</b>, we currently offer <em>Outdoor</em> and <em>Indoor</em> video surveillance along with Network products. Our main brands includes and not limited to <em>iView Technology</em> for CCTV, <em>TP-Link and Cisco</em> for Network.
-      </p>
-    </div>
-
-    <!-- newsletter form -->
-    <div class="large-4 columns newsletter">
-      <h3>Newsletter Signup</h3>
-      <p>Get the free and unique freebies delivered right into your inbox</p>
-      <input type="text" placeholder="Your name">
-      <input type="text" placeholder="Your Email Address">
-      <a href="#" class="button right">Subscribe</a>
-    </div>
-    <!-- /newsletter form -->
-  </div>
-</div>
-<!-- /.bottom -->
-
-<!-- .footer -->  
-<div class="footer">
-  <div class="row">
-    <div class="large-8 columns copyright">&copy; 2013 Intellectual Technologies and Investments Ltd. All rights reserved.</div>
-    <div class="large-4 columns social">
-      <ul class="large-block-grid-4">
-        <li><a href="#"><i class="icon-facebook-circled"></i></a></li>
-        <li><a href="#"><i class="icon-twitter-circled"></i></a></li>
-      </ul>
-    </div>
-  </div>
-</div>
-<!-- /.footer -->
-
-<!-- contact us modal -->
-<div  class="contact-us md-modal md-effect-3" id="contact-modal">
-  <div class="md-content">
-    <h3>Send Us a Message</h3>
-    
-  <form class="custom form_container" data-abide>
-      <p>We&apos;ll reply to your message within 24 hours</p>
-       <div class="row">
-       <input type="text" placeholder="Your name" pattern="[a-zA-Z]" required>
-       <small class="error" data-error-message>Please enter your name.</small>
-      </div>
-      <div class="row">
-      <input type="email" placeholder="Your Email Address" required>
-      <small class="error" data-error-message>Valid email required.</small>
-      </div>
-       <div class="row">
-       <textarea placeholder="Your Message" required></textarea>
-       <small class="error" data-error-message>Please enter your message.</small>
-       </div>
-    <div class="cta_btn">
-      <button type="submit" class="button left">Send Message</button>
-      <a class="button md-close right">Close</a>
-    </div>
-  </form>     
-  </div>
-</div>
-<!-- /contact us modal -->
-
-<!-- support modal -->
-<div class="contact-us md-modal md-effect-3" id="support-modal">
-  <div class="md-content">
-    <h3>Request Our Help Now</h3>
-    <p>More details on how to do this will be available soon!</p>
-  </div>
-</div>
-<!-- /support modal -->
-
-<div class="md-overlay"></div>
-
-<script src="http://maps.google.com/maps/api/js?key=AIzaSyBvb76rtiJC63PR97e-EkepBb5uurFCYEY&amp;sensor=false"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/1.2.1/lodash.min.js"></script>
+<% content_for :map_data do %>
+  <script src="http://maps.google.com/maps/api/js?key=AIzaSyBvb76rtiJC63PR97e-EkepBb5uurFCYEY&amp;sensor=false"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/1.2.1/lodash.min.js"></script>
+<% end %>
 

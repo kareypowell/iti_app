@@ -1941,15 +1941,15 @@ li.comment_item:after {
 section#respond {margin-top: 30px;}
 
 /*About Us Page*/
-.lgrey:before {
+.lgrey {
 	background:#ddd;
 }
 
-.dgrey:before {
+.dgrey {
 	background:#f2f2f2;
 }
 
-.lgrey:before,.dgrey:before {
+.lgrey:before, .dgrey:before {
 	content:'';
 	width:500%;
 	position:absolute;
