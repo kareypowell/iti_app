@@ -1,10 +1,21 @@
+// @font-face {
+//   font-family: 'fontello';
+//   src: url('fonts/fontello.eot?61640691');
+//   src: url('fonts/fontello.eot?61640691#iefix') format('embedded-opentype'),
+//        url('fonts/fontello.woff?61640691') format('woff'),
+//        url('fonts/fontello.ttf?61640691') format('truetype'),
+//        url('fonts/fontello.svg?61640691#fontello') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
 @font-face {
   font-family: 'fontello';
-  src: url('fontello.eot?61640691');
-  src: url('fontello.eot?61640691#iefix') format('embedded-opentype'),
-       url('fontello.woff?61640691') format('woff'),
-       url('fontello.ttf?61640691') format('truetype'),
-       url('fontello.svg?61640691#fontello') format('svg');
+  src: url('<%= font_path "fontello.eot?61640691" %>');
+  src: url('<%= font_path "fontello.eot?61640691#iefix" %>') format('embedded-opentype'),
+       url('<%= font_path "fontello.woff?61640691" %>') format('woff'),
+       url('<%= font_path "fontello.ttf?61640691" %>') format('truetype'),
+       url('<%= font_path "fontello.svg?61640691#fontello" %>') format('svg');
   font-weight: normal;
   font-style: normal;
 }
