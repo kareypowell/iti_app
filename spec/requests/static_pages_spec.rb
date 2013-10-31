@@ -13,7 +13,7 @@ describe "StaticPages" do
 
     it { should have_link('Home',      href: root_path) }
     it { should have_link('Team',      href: about_path) }
-    it { should have_link('Solutions', href: '#') }
+    it { should have_link('Solutions', href: solutions_path) }
     it { should have_link('Products',  href: '#') }
     it { should have_link('Contact',   href: '#') }
   end
@@ -23,6 +23,20 @@ describe "StaticPages" do
 
     it { should have_content('About Us') }
     it { should have_title(full_title('About Us')) }
+  end
+
+  describe "Solutions page" do
+    before { visit solutions_path }
+
+    it { should have_content('Our Solutions') }
+    it { should have_title(full_title('Our Solutions')) }
+  end
+
+  describe "Home Automation page" do
+    before { visit automation_path }
+
+    it { should have_content('Home Automation Technology') }
+    it { should have_title(full_title('Home Automation Technology')) }
   end
 
   describe "Help page" do

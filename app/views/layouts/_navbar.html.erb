@@ -12,10 +12,13 @@
       <%= custom_link_to "Team", about_path %>
     </li>
     <li>
-      <%= custom_link_to "Solutions", '#' %>
+      <%= custom_link_to "Solutions", solutions_path %>
+      <ul class="cbp-tm-submenu">
+        <li><%= link_to "Home Automation", '#' %></li>
+      </ul>
     </li>
     <li>
-      <%= link_to "Products", '#' %>
+      <%= custom_link_to "Products", '#' %>
     </li>
     <li>
       <a href="#" onClick="return false;" class="md-trigger" data-modal="contact-modal">Contact</a>
