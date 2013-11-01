@@ -19,7 +19,7 @@
   	<%= stylesheet_link_tag    "application", media: "all",
                                               "data-turbolinks-track" => true %>
     <%= render 'layouts/google_fonts' %>
-  	<%= javascript_include_tag "vendor/custom.modernizr" %>
+  	<%= javascript_include_tag "vendor/custom.modernizr", defer: 'defer' %>
     <%= csrf_meta_tags %>
     <%= render 'layouts/shim' %>
   </head>
